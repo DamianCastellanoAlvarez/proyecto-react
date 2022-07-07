@@ -1,0 +1,67 @@
+.textoejemplo {
+    float: right;
+    margin-right: -300px;
+    font-size: 30px;
+    margin-top: 150px;
+    color: brown;
+}
+
+
+.agreg-prod{
+    margin-top: 200px;
+    display: flex;
+    float: right;
+}
+
+.btm-menos{
+    background-color: cadetblue;
+}
+
+
+.btm-mas{
+    background-color: cadetblue;
+}
+
+.numero{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.btn-comprar{
+    margin-top: 280px;
+    margin-right: -70px;
+    display: flex;
+    float: right;
+    background-color:brown;
+}
+
+.carga{
+    display: flex;
+    display: inline-block;
+    align-items: center;
+    margin-top: 700px;
+    padding: 50px;
+    margin-left: 100px;
+    font-size: 20px;
+}
+
+.nombre{
+    display: flex;
+    display: inline-block;
+    align-items: center;
+    margin-top: 700px;
+    padding: 50px;
+    margin-left: 100px;
+    font-size: 30px;
+}
+
+.price{
+    display: flex;
+    display: inline-block;
+    align-items: center;
+    margin-top: 500px;
+    justify-content: space-between;
+    color: brown;
+}
+

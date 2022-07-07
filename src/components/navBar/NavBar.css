@@ -1,0 +1,33 @@
+nav li{
+    display: flex;
+    display:inline-block;
+}
+
+ul{
+    float: right;
+    margin-right: 50px;
+    margin-top: 80px;
+}
+
+a{
+    margin-right: 50px;
+    font-size: 20px;
+    text-decoration: none;
+    color: #696E5E;
+    font-family: 'Roboto';
+    src: url(../../tipografias/Roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../../tipografias/Roboto/Roboto-Regular.ttf);
+    color: #696E5E;
+}
+
+img{
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-top: 10px;
+}
+
