@@ -2,17 +2,14 @@ import React from "react";
 import Item from "./Item";
 
 
-
-function ItemList ({ hierbas }) {
+function ItemList ({ prop }) {
     return (
-    <>
-        {hierbas.map((productos) => {
-            <Item key={productos.name} productos={productos}/>
-        })}
-    </>
+    <div>
+        {prop.map((productos) => {
+            return <Item productos={productos}/>
+    })}
+    </div>
 )           
 }
-
-
 
 export default ItemList

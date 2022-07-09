@@ -1,16 +1,22 @@
 import React, { useEffect, useState } from 'react'
 import './itemlistcontainer.css'
 import ItemList from './ItemList'
+import productospausa from './productospausa'
 
-const itemlistcontainer = () => {
 
-    const promesa = new Promise((res, rej) => {
-        setTimeout(() => {
-            res(itemlistcontainer);
-        }, 3000);
-    });
 
-const [productos, setProductos] = useState([]);    
+const promesa = new Promise((res, rej) => {
+    setTimeout(() => {
+        res(productospausa);
+    }, 3000);
+});
+
+
+
+const ItemListContainer = () => {
+
+
+const [productoslista, setProductos] = useState([]); 
 const [loading, setLoading] = useState(false);
     
     useEffect(() => {
@@ -23,21 +29,20 @@ const [loading, setLoading] = useState(false);
     
     if (loading) {
         return (
-            <>
-                <h2>CARGANDO...</h2>
-            </>
+            <div className='carga'>
+                <h2 className='carga'>CARGANDO...</h2>
+                <h2 className='carga'>CARGANDO...</h2>
+                <h2 className='carga'>CARGANDO...</h2>
+            </div>
         ) 
     }
     return (
         <>
-            <ItemList productos = {productos} />
+            <ItemList key={productoslista.name} prop = {productoslista} />
         </>
     )
-
-
-
 }
 
-    
 
-export default itemlistcontainer
+
+export default ItemListContainer

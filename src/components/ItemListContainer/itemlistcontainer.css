@@ -1,11 +1,3 @@
-.textoejemplo {
-    float: right;
-    margin-right: -300px;
-    font-size: 30px;
-    margin-top: 150px;
-    color: brown;
-}
-
 
 .agreg-prod{
     margin-top: 200px;
@@ -28,40 +20,38 @@
     font-size: 20px;
 }
 
-.btn-comprar{
-    margin-top: 280px;
-    margin-right: -70px;
-    display: flex;
-    float: right;
-    background-color:brown;
-}
 
 .carga{
     display: flex;
     display: inline-block;
     align-items: center;
-    margin-top: 700px;
-    padding: 50px;
+    margin-top: 200px;
     margin-left: 100px;
-    font-size: 20px;
+    padding-left: 50px;
 }
 
-.nombre{
+
+.contenedor{
     display: flex;
     display: inline-block;
-    align-items: center;
-    margin-top: 700px;
-    padding: 50px;
+    text-align: center;
+    margin-top: 500px;
     margin-left: 100px;
-    font-size: 30px;
+    padding-left: 50px;
+}
+
+
+.nombre{
+    font-size: 20px;
+    font-style: oblique;
 }
 
 .price{
-    display: flex;
-    display: inline-block;
-    align-items: center;
-    margin-top: 500px;
-    justify-content: space-between;
-    color: brown;
+    
 }
 
+.btn-detalles{
+    background-color:brown;
+    border-color: blue;
+    margin-top: 10px;
+}
