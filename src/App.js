@@ -3,10 +3,10 @@ import './App.css';
 import NavBar from './components/NavBar/NavBar';
 import ItemDetailContainer from './components/ItemDetailContainer.jsx/ItemDetailContainer';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Blog from '../src/components/Blog/Blog'
 import Contacto from '../src/components/Contacto/Contacto'
-
+<Route path="*" element={<Navigate to="/"/>}/>
 
 function App () {
   return (

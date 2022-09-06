@@ -9,26 +9,25 @@ import { useParams } from 'react-router-dom';
 
 const ItemListContainer = () => {
 
-    const [producto, setProductos] = useState ([])
-    const [loading, setLoading] = useState(true);
-    const {categoryId} = useParams()
+    const [productos, setProductos] = useState([])
+    const [loading, setloading] = useState(false);
 
+    const {categoryId} = useParams()
+    
     useEffect(() => {
-        setLoading(true)
+        setloading(true)
         Pedirdatos()
-        .then(res => {
-            if(!categoryId){
-                setProductos(res);
-            }else{
-                setProductos ( res.filter((prod) => prod.category === categoryId ))
-            }
-        })
-        .catch(error => {
-            console.log(error)
-        })
-        .finally(() =>{
-            setLoading(false);
-        })
+            .then( (res) => {
+                if(!categoryId){
+                setProductos(res)
+            }else{setProductos(res.filter((prod)=> prod.category === categoryId))
+            }})
+            .catch( (error) => {
+                console.log(error)
+            })
+            .finally(() => {
+                setloading(false)
+            })
     }, [categoryId])
     
 if(loading){
@@ -37,21 +36,21 @@ if(loading){
             <div>
                 <Spinner
                     color="success"
-                    size="rm"
+                    size="sm"
                     type="grow">
                 </Spinner>  
             </div>
             <div>
                 <Spinner
                     color="success"
-                    size="rm"
+                    size="sm"
                     type="grow">
                 </Spinner>  
             </div>
             <div>
                 <Spinner
                     color="success"
-                    size="rm"
+                    size="sm"
                     type="grow">
                 </Spinner>  
             </div>
@@ -60,7 +59,7 @@ if(loading){
     }
     return (
         <>
-            <ItemList productos = {producto} />
+            <ItemList productos = {productos} />
         </>
     )
 }

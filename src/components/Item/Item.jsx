@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const Item = ({producto}) => {
 
-    const { name, price, descripcion, img } = producto;
+    const { name, descripcion, img } = producto;
 
     return (
         <div className="d-flex justify-content-evenly">
@@ -19,9 +19,6 @@ const Item = ({producto}) => {
                 {name}
             </CardHeader>
             <CardBody>
-                <CardTitle tag="h5" className="text-center text-danger">
-                    {price}
-                </CardTitle>
                 <CardText className=" text-center fst-italic">
                     <img className="img-thumbnail" src={`${img}`} />
                     {descripcion}
